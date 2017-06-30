@@ -1,4 +1,4 @@
-//demonstrate the for loop
+//demonstrate the for loop.
 class ForTick {
     public static void main(String args[]) {
         int n;
