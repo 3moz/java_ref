@@ -3,13 +3,21 @@ class Box {
     double height;
     double depth;
 
-    //Here's a constructor for Box
-    Box() {
-        System.out.println("Constructing Box");
-        width = 10;
-        height = 10;
-        depth = 10;
+    //Here, we use a parameterized constructor to initialize the dimensions of a box.
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
     }
+    
+    //Here's a constructor for Box
+    // Box() {
+    //     //the println statement is for illustration purposes
+    //     System.out.println("Constructing Box");
+    //     width = 10;
+    //     height = 10;
+    //     depth = 10;
+    // }
 
     //display volume of a box
     // void volume() {
