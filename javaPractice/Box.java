@@ -4,6 +4,7 @@ class Box {
     double depth;
 
     //Here, we use a parameterized constructor to initialize the dimensions of a box.
+    //used when all dimensions are specified
     Box(double w, double h, double d) {
         width = w;
         height = h;
@@ -36,4 +37,21 @@ class Box {
     //     height = h;
     //     depth = d;
     // }
+
+    //below follow other contructors to initialize the dimensions of a box in various ways
+    //... demonstrating constructor overloading
+
+    //constructor used when no methods are specified
+    Box() {
+        //use -1 to indicate an uninitialized box
+        width = -1;
+        height = -1;
+        depth = -1;
+    }
+
+    //constructor used when cube is created
+    Box(double len) {
+        width = height = depth = len;
+    }
+   
 }
